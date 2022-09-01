@@ -18,6 +18,11 @@ class FoodController extends Controller
         $food->create($request);
     }
 
+    public function edit(Food $food, Int $id, Request $request)
+    {
+        $food->edit($id, $request);
+    }
+
     public function delete(Food $food, Int $id)
     {
         $food->deleteFood($id);

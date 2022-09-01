@@ -36,6 +36,8 @@ Route::middleware(['middleware' => 'api'])->group(function () {
     Route::get('/foods', [FoodController::class,'index']);
     #食材登録
     Route::post('/foods', [FoodController::class,'create']);
+    #食材編集
+    Route::put('foods/{id}', [FoodController::class,'edit']);
     #食材削除
     Route::delete('/foods/{id}', [FoodController::class,'delete']);
 
