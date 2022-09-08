@@ -30,14 +30,14 @@ Route::middleware(['middleware' => 'api'])->group(function () {
     // #ユーザー編集
     Route::put('/users/{id}', [UserController::class,'update']);
     // #ユーザー削除
-    Route::delete('/users/${id}', [UserController::class,'delete']);
+    Route::delete('/users/{id}', [UserController::class,'delete']);
 
     #食材全件取得
     Route::get('/foods', [FoodController::class,'index']);
     #食材登録
     Route::post('/foods', [FoodController::class,'create']);
     #食材編集
-    Route::put('foods/{id}', [FoodController::class,'edit']);
+    Route::put('/foods/{id}', [FoodController::class,'edit']);
     #食材削除
     Route::delete('/foods/{id}', [FoodController::class,'delete']);
 

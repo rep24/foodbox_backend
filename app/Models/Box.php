@@ -18,7 +18,7 @@ class Box extends Model
     public function findbyId(Int $id)
     {
         $box = Box::join('food', 'boxes.food_id', '=', 'food.id')
-        ->select('boxes.id', 'name', 'deadline', 'memo', 'image')
+        ->select('boxes.id', 'name', 'deadline', 'memo', 'image', 'food.category_id', 'food.parent_id')
         ->where('user_id', $id)
         ->orderBy('deadline', 'asc')
         ->get();
