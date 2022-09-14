@@ -11,6 +11,8 @@ class Food extends Model
     protected $fillable = [
         'name',
         'image',
+        'category_id',
+        'parent_id'
     ];
 
     public function index()

@@ -11,10 +11,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        //
-    }
+
 
     /**
      * Bootstrap any application services.
@@ -24,5 +21,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+    }
+
+    public function register()
+    {
+      $this->app->singleton(FakerGenerator::class, function(){
+        return FakerFactory::create('ja_JP');
+      });
     }
 }

@@ -50,7 +50,7 @@ Route::middleware(['middleware' => 'api'])->group(function () {
     #ボックスの食材削除
     Route::delete('/box/{id}', [BoxController::class,'delete']);
 
-    #お問い合わせ
+    #お問い合わせ送信
     Route::post('/contact', [ContactController::class,'contact']);
     #お問い合わせ一覧取得
     Route::get('/contact', [ContactController::class,'index']);
