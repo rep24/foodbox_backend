@@ -1,5 +1,5 @@
 # FoodBox - Backend
-Laravel × Next.js × MySql
+Laravel × Next.js × MySQL
 ## 概要
 このアプリケーションはユーザーが食べ物の賞味期限を登録することで、賞味期限を切らしてしまったり、不必要な食材を購入してしまうことを防ぎます。  
 また、楽天APIを活用して賞味期限が迫っている食材を利用したレシピを表示することにより、献立やお買い物にも有効に働きます。  
@@ -14,7 +14,7 @@ Laravel × Next.js × MySql
 - Laravel Breeze API
 
 ３.データベース
-- MySql
+- MySQL
 
 ## プロジェクトの立ち上げ方
 ##### ●フロントエンド
